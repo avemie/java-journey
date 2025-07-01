@@ -15,5 +15,6 @@ jobs:
           distribution: temurin
           java-version: '21'
 
-      - name: Build & test with Maven   # kompilacja + testy
+      - name: Build & test with Maven
+       working-directory: kanban-cli# kompilacja + testy
         run: mvn -B test --file pom.xml
